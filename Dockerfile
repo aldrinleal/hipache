@@ -20,7 +20,7 @@ run mkdir ./hipache
 add . ./hipache
 
 # Then install it
-run npm install -g node-etcd@2.0.10 --production; npm install -g ./hipache --production
+run npm install -g node-etcd@2.0.10 --production; npm install -g ./hipache --production && mkdir -p /var/log
 
 # This is provisional, as we don't honor it yet in hipache
 env NODE_ENV production
