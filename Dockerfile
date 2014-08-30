@@ -29,7 +29,7 @@ env NODE_ENV production
 add ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Expose hipache and redis
-expose  80
+expose 80
 
 # Start supervisor
 cmd ["supervisord", "-n"]
