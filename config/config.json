@@ -8,16 +8,10 @@
         "retryOnError": 3,
         "deadBackendOn500": true,
         "httpKeepAlive": false,
-    },
-    "https": {
-        "port": 443,
-        "bind": "127.0.0.1",
-        "key": "/etc/ssl/ssl.key",
-        "cert": "/etc/ssl/ssl.crt"
-    },
+    }
     "http": {
         "port": 80,
-        "bind": "127.0.0.1",
+        "bind": "0.0.0.0",
     },
-    "driver": "redis://127.0.0.1:6379"
+    "driver": "etcd://172.17.42.1:4001"
 }
